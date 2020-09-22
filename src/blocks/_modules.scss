@@ -1,11 +1,21 @@
 @import "modules/header/header";
-@import "modules/main-banner/main-banner";
-@import "modules/main-banner/text-animation";
-@import "modules/our-mission/our-mission";
-@import "modules/types-work/types-work";
-@import "modules/stages-work/stages-work";
-@import "modules/work-examples/work-examples";
-@import "modules/video-and-articles/video-and-articles";
-@import "modules/contact-form/contact-form";
-@import "modules/documents/documents";
 @import "modules/footer/footer";
+
+/*main*/
+@import "modules/main/main-banner/main-banner";
+@import "modules/main/main-banner/text-animation";
+@import "modules/main/our-mission/our-mission";
+@import "modules/main/types-work/types-work";
+@import "modules/main/stages-work/stages-work";
+@import "modules/main/work-examples/work-examples";
+@import "modules/main/video-and-articles/video-and-articles";
+@import "modules/main/contact-form/contact-form";
+@import "modules/main/documents/documents";
+
+/*about_company*/
+@import "modules/about_company/difference/difference";
+@import "modules/about_company/breadcrumb/breadcrumb";
+@import "modules/about_company/company/company";
+@import "modules/about_company/company-img/company-img";
+@import "modules/about_company/ideology/ideology";
+@import "modules/about_company/result/result";

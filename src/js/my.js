@@ -151,8 +151,12 @@ var particlesJsOption = {
     "retina_detect": true
 };
 
-particlesJS("particles-js__our-mission", particlesJsOption);
-particlesJS("particles-js__stages-work", particlesJsOption);
-particlesJS("particles-js__footer", particlesJsOption);
-
-
+if(document.getElementById('particles-js__our-mission')) {
+    particlesJS("particles-js__our-mission", particlesJsOption);
+}
+if(document.getElementById('particles-js__stages-work')) {
+    particlesJS("particles-js__stages-work", particlesJsOption);
+}
+if(document.getElementById('particles-js__footer')) {
+    particlesJS("particles-js__footer", particlesJsOption);
+}

@@ -1,0 +1,49 @@
+.breadcrumb {
+  background: #000000;
+  padding-bottom: 12px;
+  padding-top: 17px;
+
+  ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+  }
+
+  li {
+	padding-right: 37px;
+	list-style-type: none;
+	position: relative;
+
+	&::before {
+	  content: url("../../../../img/Arrow-bread.svg");
+	  position: absolute;
+	  bottom: calc(25% - 2px);
+	  right: 15px;
+	}
+
+	a {
+	  font-style: normal;
+	  font-weight: normal;
+	  font-size: 18px;
+	  line-height: 25px;
+	  color: rgba(255, 255, 255, 0.34);
+	  &:hover{
+		color: #D2B886;
+	  }
+
+	}
+  }
+
+  li.active {
+	a {
+	  color: rgba(255, 255, 255, 0.78) !important;
+	}
+  }
+
+  li:last-child {
+	&::before {
+	  display: none !important;
+	}
+  }
+}
+

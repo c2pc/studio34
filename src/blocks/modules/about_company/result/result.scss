@@ -1,0 +1,32 @@
+.result {
+  background: #E6C783;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.result-text {
+  p {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 38px;
+	color: #000000;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .result-text p {
+	font-size: 22px !important;
+	line-height: 32px !important;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .result-text p {
+	font-size: 20px !important;
+	line-height: 28px !important;
+  }
+
+}

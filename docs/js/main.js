@@ -155,25 +155,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/blocks/modules/contact-form/contact-form.js":
-/*!*********************************************************!*\
-  !*** ./src/blocks/modules/contact-form/contact-form.js ***!
-  \*********************************************************/
+/***/ "./src/blocks/modules/about_company/ideology/ideology.js":
+/*!***************************************************************!*\
+  !*** ./src/blocks/modules/about_company/ideology/ideology.js ***!
+  \***************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function($) {/*Contact form script*/
-$(document).ready(function () {
-  var sContactForm = document.getElementById('s-contact-form');
-  var sFormAllInput = sContactForm.querySelectorAll('input');
-  sFormAllInput.forEach(function (item) {
-    item.addEventListener('input', function () {
-      if (!item.classList.contains('visited')) item.classList.add('visited');
-    });
-  });
-});
-/*Contact form script*/
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
 
 /***/ }),
 
@@ -298,10 +287,35 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/main-banner/main-banner.js":
-/*!*******************************************************!*\
-  !*** ./src/blocks/modules/main-banner/main-banner.js ***!
-  \*******************************************************/
+/***/ "./src/blocks/modules/main/contact-form/contact-form.js":
+/*!**************************************************************!*\
+  !*** ./src/blocks/modules/main/contact-form/contact-form.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {/*Contact form script*/
+$(document).ready(function () {
+  var sContactForm = document.getElementById('s-contact-form');
+
+  if (sContactForm) {
+    var sFormAllInput = sContactForm.querySelectorAll('input');
+    sFormAllInput.forEach(function (item) {
+      item.addEventListener('input', function () {
+        if (!item.classList.contains('visited')) item.classList.add('visited');
+      });
+    });
+  }
+});
+/*Contact form script*/
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/blocks/modules/main/main-banner/main-banner.js":
+/*!************************************************************!*\
+  !*** ./src/blocks/modules/main/main-banner/main-banner.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -325,10 +339,10 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/stages-work/stages-work.js":
-/*!*******************************************************!*\
-  !*** ./src/blocks/modules/stages-work/stages-work.js ***!
-  \*******************************************************/
+/***/ "./src/blocks/modules/main/stages-work/stages-work.js":
+/*!************************************************************!*\
+  !*** ./src/blocks/modules/main/stages-work/stages-work.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -363,6 +377,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /***/ }),
 
+/***/ "./src/js/aos-setting.js":
+/*!*******************************!*\
+  !*** ./src/js/aos-setting.js ***!
+  \*******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var aos_dist_aos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! aos/dist/aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos_dist_aos__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos__WEBPACK_IMPORTED_MODULE_0__);
+
+aos_dist_aos__WEBPACK_IMPORTED_MODULE_0___default.a.init();
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -384,12 +414,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_js_dist_modal__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _blocks_modules_header_header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../blocks/modules/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _blocks_modules_header_header__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_header_header__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _blocks_modules_stages_work_stages_work__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../blocks/modules/stages-work/stages-work */ "./src/blocks/modules/stages-work/stages-work.js");
-/* harmony import */ var _blocks_modules_stages_work_stages_work__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_stages_work_stages_work__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _blocks_modules_contact_form_contact_form__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../blocks/modules/contact-form/contact-form */ "./src/blocks/modules/contact-form/contact-form.js");
-/* harmony import */ var _blocks_modules_contact_form_contact_form__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_contact_form_contact_form__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _blocks_modules_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../blocks/modules/main-banner/main-banner */ "./src/blocks/modules/main-banner/main-banner.js");
-/* harmony import */ var _blocks_modules_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _blocks_modules_main_stages_work_stages_work__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../blocks/modules/main/stages-work/stages-work */ "./src/blocks/modules/main/stages-work/stages-work.js");
+/* harmony import */ var _blocks_modules_main_stages_work_stages_work__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_main_stages_work_stages_work__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _blocks_modules_main_contact_form_contact_form__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../blocks/modules/main/contact-form/contact-form */ "./src/blocks/modules/main/contact-form/contact-form.js");
+/* harmony import */ var _blocks_modules_main_contact_form_contact_form__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_main_contact_form_contact_form__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _blocks_modules_main_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../blocks/modules/main/main-banner/main-banner */ "./src/blocks/modules/main/main-banner/main-banner.js");
+/* harmony import */ var _blocks_modules_main_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_main_main_banner_main_banner__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _blocks_modules_footer_footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../blocks/modules/footer/footer */ "./src/blocks/modules/footer/footer.js");
 /* harmony import */ var _blocks_modules_footer_footer__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_footer_footer__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _swiper_settings__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./swiper-settings */ "./src/js/swiper-settings.js");
@@ -397,8 +427,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _particles_min__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_particles_min__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _priority_nav__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./priority-nav */ "./src/js/priority-nav.js");
 /* harmony import */ var _priority_nav__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_priority_nav__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _my__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./my */ "./src/js/my.js");
-/* harmony import */ var _my__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_my__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _aos_setting__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./aos-setting */ "./src/js/aos-setting.js");
+/* harmony import */ var _my__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./my */ "./src/js/my.js");
+/* harmony import */ var _my__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_my__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _blocks_modules_about_company_ideology_ideology__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../blocks/modules/about_company/ideology/ideology */ "./src/blocks/modules/about_company/ideology/ideology.js");
+/* harmony import */ var _blocks_modules_about_company_ideology_ideology__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_blocks_modules_about_company_ideology_ideology__WEBPACK_IMPORTED_MODULE_15__);
 // Импортируем jQuery
  // Импортируем необходимые js-файлы Bootstrap 4
 
@@ -414,6 +447,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+ //about_company
 
 
 
@@ -650,9 +686,18 @@ var particlesJsOption = {
   },
   "retina_detect": true
 };
-particlesJS("particles-js__our-mission", particlesJsOption);
-particlesJS("particles-js__stages-work", particlesJsOption);
-particlesJS("particles-js__footer", particlesJsOption);
+
+if (document.getElementById('particles-js__our-mission')) {
+  particlesJS("particles-js__our-mission", particlesJsOption);
+}
+
+if (document.getElementById('particles-js__stages-work')) {
+  particlesJS("particles-js__stages-work", particlesJsOption);
+}
+
+if (document.getElementById('particles-js__footer')) {
+  particlesJS("particles-js__footer", particlesJsOption);
+}
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
