@@ -87,7 +87,7 @@
 	margin-top: 0;
   }
   100% {
-	margin-top: 270px;
+	margin-top: 140px;
   }
 }
 
@@ -101,62 +101,6 @@
   animation: 1.5s ease-out forwards numberRotate;
 }
 
-@keyframes s-col {
-  0% {
-	transform: rotate(-0deg);
-  }
-  100% {
-	transform: rotate(-180deg);
-  }
-}
-
-@keyframes s-col {
-  0% {
-	margin-top: 0;
-  }
-  100% {
-	margin-top: 99px;
-  }
-}
-
-.animation-start .s-col-3:nth-child(odd) {
-  margin-top: 0;
-  animation: 1.7s ease-out forwards s-col;
-}
-
-.animation-start .s-col-3 span {
-  transform: rotate(0deg);
-  animation: 1.5s ease-out forwards numberRotate;
-}
-
-
-@keyframes s-cols {
-  0% {
-	transform: rotate(-0deg);
-  }
-  100% {
-	transform: rotate(-180deg);
-  }
-}
-
-@keyframes s-cols {
-  0% {
-	margin-top: 0;
-  }
-  100% {
-	margin-top: 70px;
-  }
-}
-
-.animation-start .s-col-8:nth-child(odd) {
-  margin-top: 0;
-  animation: 1.7s ease-out forwards s-cols;
-}
-
-.animation-start .s-col-8 span {
-  transform: rotate(0deg);
-  animation: 1.5s ease-out forwards numberRotate;
-}
 
 @media screen and (max-width: 1460px) {
   .difference__cards {
