@@ -15,7 +15,7 @@
 	position: relative;
 
 	&::before {
-	  content: url("../../../../img/Arrow-bread.svg");
+	  content: url("../img/Arrow-bread.svg");
 	  position: absolute;
 	  bottom: calc(25% - 2px);
 	  right: 15px;
@@ -27,7 +27,8 @@
 	  font-size: 18px;
 	  line-height: 25px;
 	  color: rgba(255, 255, 255, 0.34);
-	  &:hover{
+
+	  &:hover {
 		color: #D2B886;
 	  }
 

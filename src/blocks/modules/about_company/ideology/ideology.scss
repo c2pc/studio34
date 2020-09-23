@@ -1,6 +1,8 @@
 .ideology {
   background: #000000;
   padding-bottom: 235px;
+
+
 }
 
 .ideology-items {
@@ -12,7 +14,7 @@
   display: flex;
   justify-content: center;
   width: 50%;
-  background: url("../../../../img/ideology-img.png") center center no-repeat;
+  background: url("../img/ideology-img.png") center center no-repeat;
   min-height: 504px;
   background-size: contain;
 }
@@ -35,7 +37,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 50%;
-  background: url("../../../../img/ideology-img3.png") left center no-repeat;
+  background: url("../img/ideology-img3.png") left center no-repeat;
   margin-left: 33px;
   min-height: 542px;
   background-size: contain;
@@ -48,9 +50,10 @@
   justify-content: flex-start;
   align-items: center;
   width: 50%;
-  background: url("../../../../img/ideology-img5.png") center center no-repeat;
+  background: url("../img/ideology-img5.png") center center no-repeat;
   background-size: contain;
   height: 448px;
+  overflow: hidden;
 
   .ideology-img__item-three {
 	height: 100%;
@@ -119,6 +122,12 @@
 }
 
 @media screen and (max-width: 1363px) {
+
+  .ideology {
+	.container-about {
+	  overflow: hidden;
+	}
+  }
   .ideology-img__three {
 	img {
 	  width: 100%;
@@ -148,6 +157,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .ideology {
+	.container-about {
+	  overflow: hidden;
+	}
+  }
   .container-about {
 	padding-left: 15px !important;
   }
@@ -173,7 +187,7 @@
   }
   .ideology-img__two {
 	width: 100%;
-	background: url("../../../../img/ideology-img3.png") center center no-repeat;
+	background: url("../img/ideology-img3.png") center center no-repeat;
 	justify-content: center;
 	background-size: contain;
   }

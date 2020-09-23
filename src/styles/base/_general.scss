@@ -61,6 +61,7 @@ canvas {
   padding-left: 45px;
   padding-right: 15px;
   margin: 0 auto;
+
 }
 
 .s-full-height {
@@ -93,6 +94,7 @@ canvas {
   padding-right: 15px;
   padding-left: 15px;
 }
+
 .s-col-5 {
   flex: 0 0 20%;
   max-width: 20%;
@@ -129,6 +131,10 @@ canvas {
   letter-spacing: 0.055em;
 }
 
+.ideology {
+  overflow: hidden;
+}
+
 .section-title {
   position: relative;
   display: inline-block;
@@ -143,12 +149,12 @@ canvas {
   }
 
   &::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: calc(100% + 10px);
-	right: -5000px;
-	left: 0;
-	border-bottom: 1px solid #605F6C;
+	left: -5000px;
+	right: 0px;
+	border-bottom: 1px solid rgb(96, 95, 108);
   }
 }
 
